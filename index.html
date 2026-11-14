@@ -1,454 +1,106 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Trader Ansh | My Trading Journey</title>
-
-<meta name="description" content="Welcome to Trader Ansh. Follow my trading journey, learn trading concepts and get updates on Telegram and YouTube.">
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #080808;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container {
-    width: 100%;
-    max-width: 520px;
-    margin: auto;
-    min-height: 100vh;
-    background: #0d0d0d;
-    overflow: hidden;
-}
-
-/* HERO WALLPAPER */
-
-.hero {
-    position: relative;
-    width: 100%;
-    height: 540px;
-    background-image:
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.03) 35%,
-            rgba(0,0,0,0.35) 60%,
-            #0d0d0d 100%
-        ),
-        url("1770786776263~3.jpg");
-
-    background-size: cover;
-    background-position: center 25%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 30px 20px;
-}
-
-.hero-content {
-    text-align: center;
-    width: 100%;
-}
-
-.hero-tag {
-    display: inline-block;
-    border: 1px solid #ffffff70;
-    padding: 6px 15px;
-    border-radius: 30px;
-    font-size: 11px;
-    letter-spacing: 3px;
-    margin-bottom: 12px;
-    background: #00000070;
-}
-
-.hero h1 {
-    font-size: 39px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    line-height: 1.1;
-}
-
-.hero h1 span {
-    color: #e52b2b;
-}
-
-.hero p {
-    color: #cccccc;
-    font-size: 13px;
-    margin-top: 12px;
-    letter-spacing: 2px;
-}
-
-/* MAIN CONTENT */
-
-.content {
-    padding: 15px 24px 35px;
-    text-align: center;
-}
-
-.small-heading {
-    color: #e52b2b;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 12px;
-}
-
-.main-title {
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 1.25;
-    margin-bottom: 15px;
-}
-
-.main-title span {
-    color: #e52b2b;
-}
-
-.description {
-    color: #aaa;
-    font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 28px;
-}
-
-/* SOCIAL BUTTONS */
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 32px;
-}
-
-.social-btn {
-    text-decoration: none;
-    padding: 17px 20px;
-    border-radius: 12px;
-    font-size: 15px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.3s;
-}
-
-.telegram {
-    background: #087fbd;
-    color: white;
-    box-shadow: 0 0 18px #087fbd35;
-}
-
-.youtube {
-    background: #e62117;
-    color: white;
-    box-shadow: 0 0 18px #e6211735;
-}
-
-.social-btn:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.15);
-}
-
-.arrow {
-    font-size: 22px;
-}
-
-/* FEATURES */
-
-.section-title {
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 18px;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    margin-bottom: 32px;
-}
-
-.feature {
-    background: #171717;
-    border: 1px solid #292929;
-    border-radius: 12px;
-    padding: 19px 10px;
-}
-
-.feature .icon {
-    font-size: 25px;
-    margin-bottom: 8px;
-}
-
-.feature h3 {
-    font-size: 13px;
-    margin-bottom: 5px;
-}
-
-.feature p {
-    color: #999;
-    font-size: 11px;
-}
-
-/* QUOTE */
-
-.quote {
-    border-left: 3px solid #e52b2b;
-    background: #171717;
-    padding: 18px;
-    text-align: left;
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
-
-.quote p {
-    color: #ddd;
-    font-size: 14px;
-    font-style: italic;
-}
-
-/* FOOTER */
-
-.footer {
-    border-top: 1px solid #292929;
-    padding: 22px 20px;
-    text-align: center;
-}
-
-.footer h2 {
-    font-size: 21px;
-    letter-spacing: 4px;
-}
-
-.footer h2 span {
-    color: #e52b2b;
-}
-
-.footer p {
-    color: #777;
-    font-size: 10px;
-    margin-top: 10px;
-    line-height: 1.7;
-}
-
-.disclaimer {
-    margin-top: 15px;
-    color: #666;
-    font-size: 10px;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 380px) {
-    .hero {
-        height: 470px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .main-title {
-        font-size: 26px;
-    }
-
-    .content {
-        padding-left: 17px;
-        padding-right: 17px;
-    }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Follow the 90 Days Trading to Business Challenge live on Telegram." />
+  <title>90 Days Trading to Business Challenge</title>
+  <style>
+    :root{--bg:#080b12;--panel:#111722;--line:#263142;--text:#f5f7fb;--muted:#9aa7ba;--gold:#f8c84e;--blue:#35b9f5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 50% -20%,#202a3c 0%,var(--bg) 52%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}
+    .brand img{width:42px;height:42px;object-fit:contain;border-radius:12px}
+    .live{font-size:12px;color:#b7c3d5;border:1px solid #344153;border-radius:99px;padding:8px 12px;display:flex;align-items:center;gap:8px}
+    .dot{width:7px;height:7px;background:#36df9a;border-radius:50%;box-shadow:0 0 12px #36df9a}
+    .hero{text-align:center;padding:70px 0 56px}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #3b3421;background:#1b180f;color:var(--gold);padding:9px 14px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:24px auto 20px;max-width:900px}
+    h1 span{color:var(--gold);display:block}
+    .lead{color:var(--muted);font-size:clamp(16px,2vw,19px);line-height:1.7;max-width:650px;margin:0 auto}
+    .actions{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin:32px 0 25px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 21px;border-radius:13px;font-weight:800;transition:.2s;min-height:52px}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .primary{background:var(--gold);color:#15120a;box-shadow:0 8px 30px #f8c84e20}
+    .secondary{border:1px solid #354153;background:#121925}
+    .fine{font-size:12px;color:#738197}
+    .visual{max-width:850px;margin:40px auto 0;border:1px solid #2a3445;border-radius:22px;padding:8px;background:linear-gradient(135deg,#1b2535,#0c111a);box-shadow:0 30px 90px #0008}
+    .visual-inner{border-radius:16px;background:linear-gradient(145deg,#111925,#0b1018);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px;text-align:left}
+    .card{border:1px solid #293447;border-radius:16px;padding:22px;background:#111722}
+    .card small{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+    .card h3{margin:12px 0 8px;font-size:23px}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+    .mini{display:flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;font-weight:700;margin-bottom:12px}
+    .steps{padding:60px 0}.section-title{text-align:center;font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:0 0 12px}
+    .section-sub{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 30px;line-height:1.6}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step{padding:24px;border:1px solid var(--line);border-radius:17px;background:#0f141d}
+    .num{width:35px;height:35px;border-radius:10px;background:#25200f;color:var(--gold);display:grid;place-items:center;font-weight:900}
+    .step h3{margin:18px 0 9px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
+    .cta{margin:35px 0 70px;padding:36px;border:1px solid #3b3421;border-radius:22px;background:linear-gradient(120deg,#1b180f,#111722 65%);text-align:center}
+    .cta h2{font-size:clamp(26px,4vw,40px);margin:0 0 12px}.cta p{color:var(--muted);margin:0 auto 24px;max-width:600px;line-height:1.6}
+    footer{border-top:1px solid #1e2735;padding:25px 0 35px;color:#77859a;font-size:12px;line-height:1.7;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:720px){.hero{padding:48px 0 35px}.visual-inner{grid-template-columns:1fr;padding:14px}.grid{grid-template-columns:1fr}.cta{padding:27px 18px}.brand span{font-size:13px}}
+  </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#"><img src="logo.png" alt="Your logo" /><span>TRADING JOURNEY</span></a>
+      <div class="live"><span class="dot"></span> LIVE ON TELEGRAM</div>
+    </header>
 
-<div class="container">
+    <main>
+      <section class="hero">
+        <div class="eyebrow">● &nbsp; 90 DAYS • REAL JOURNEY</div>
+        <h1>90 Days Trading<br><span>to Business Challenge</span></h1>
+        <p class="lead">The journey, the discipline, the decisions—and the real trading updates. Follow the challenge live on Telegram.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://t.me/+ntE9elayfcFjMDM1" target="_blank" rel="noopener">Join Live on Telegram ↗</a>
+          <a class="btn secondary" href="https://broker-qx.pro/sign-up/?lid=2426032" target="_blank" rel="noopener">Open Broker Account ↗</a>
+        </div>
+        <div class="fine">Follow along • Learn from the process • Stay disciplined</div>
 
-    <!-- TOP WALLPAPER -->
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <div class="hero-tag">
-                WELCOME TO MY WORLD
+        <div class="visual">
+          <div class="visual-inner">
+            <div class="card">
+              <div class="mini"><span class="dot"></span> CHALLENGE IN PROGRESS</div>
+              <small>THE MISSION</small>
+              <h3>Build with discipline.</h3>
+              <p>90 days of documenting the trading journey—setups, risk management, wins, losses, and lessons.</p>
             </div>
-
-            <h1>
-                TRADER <span>ANSH</span>
-            </h1>
-
-            <p>
-                DREAM • DISCIPLINE • DEDICATION
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- INTRODUCTION -->
-
-    <main class="content">
-
-        <div class="small-heading">
-            MY JOURNEY
-        </div>
-
-        <h2 class="main-title">
-            I HAD NO OTHER CHOICE,<br>
-            SO I CHOSE <span>TRADING.</span>
-        </h2>
-
-        <p class="description">
-            Every journey starts with a decision.
-            This is mine. Follow my journey as I explore
-            the world of trading, share knowledge,
-            trading concepts and market updates.
-        </p>
-
-        <!-- SOCIAL MEDIA BUTTONS -->
-
-        <div class="buttons">
-
-            <a class="social-btn telegram"
-               href="https://t.me/+ntE9elayfcFjMDM1"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                <span>✈ JOIN MY TELEGRAM</span>
-                <span class="arrow">→</span>
-
-            </a>
-
-            <a class="social-btn youtube"
-               href="https://youtube.com/@traderanshislive?si=hvo_C4eUoi-mI3XZ"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                <span>▶ SUBSCRIBE ON YOUTUBE</span>
-                <span class="arrow">→</span>
-
-            </a>
-
-        </div>
-
-        <!-- WHAT YOU WILL FIND -->
-
-        <h2 class="section-title">
-            WHAT YOU WILL FIND HERE
-        </h2>
-
-        <div class="features">
-
-            <div class="feature">
-                <div class="icon">📊</div>
-                <h3>Trading Knowledge</h3>
-                <p>Learn trading concepts and strategies.</p>
+            <div class="card">
+              <small>FOLLOW THE JOURNEY</small>
+              <h3>Every update. One channel.</h3>
+              <p>Get challenge updates and live posts directly in the Telegram community.</p>
+              <div style="margin-top:18px;color:#35b9f5;font-weight:800;font-size:13px">TELEGRAM COMMUNITY →</div>
             </div>
-
-            <div class="feature">
-                <div class="icon">📈</div>
-                <h3>Market Updates</h3>
-                <p>Follow market discussions and analysis.</p>
-            </div>
-
-            <div class="feature">
-                <div class="icon">🎯</div>
-                <h3>Trading Sessions</h3>
-                <p>Get updates about upcoming sessions.</p>
-            </div>
-
-            <div class="feature">
-                <div class="icon">🎓</div>
-                <h3>Learning Journey</h3>
-                <p>Improve your understanding of trading.</p>
-            </div>
-
+          </div>
         </div>
+      </section>
 
-        <!-- MOTIVATIONAL QUOTE -->
-
-        <div class="quote">
-            <p>
-                "Success is not built in one day.
-                Stay disciplined, keep learning and
-                never stop improving."
-            </p>
+      <section class="steps">
+        <h2 class="section-title">Be part of the journey</h2>
+        <p class="section-sub">Keep it simple. Follow the updates and focus on the process—not promises.</p>
+        <div class="grid">
+          <article class="step"><div class="num">01</div><h3>Join Telegram</h3><p>Get challenge updates, session posts, and progress directly in the channel.</p></article>
+          <article class="step"><div class="num">02</div><h3>Watch & learn</h3><p>Observe the decisions, patience, and risk management behind each session.</p></article>
+          <article class="step"><div class="num">03</div><h3>Trade responsibly</h3><p>Do your own research, practice first, and never risk money you cannot afford to lose.</p></article>
         </div>
+      </section>
 
-        <!-- FINAL CTA -->
-
-        <h2 class="section-title">
-            BE PART OF MY JOURNEY
-        </h2>
-
-        <p class="description">
-            Follow me on Telegram and YouTube
-            to stay connected.
-        </p>
-
-        <div class="buttons">
-
-            <a class="social-btn telegram"
-               href="https://t.me/+ntE9elayfcFjMDM1"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                <span>JOIN TELEGRAM NOW</span>
-                <span class="arrow">→</span>
-
-            </a>
-
-            <a class="social-btn youtube"
-               href="https://youtube.com/@traderanshislive?si=hvo_C4eUoi-mI3XZ"
-               target="_blank"
-               rel="noopener noreferrer">
-
-                <span>VISIT MY YOUTUBE</span>
-                <span class="arrow">→</span>
-
-            </a>
-
-        </div>
-
+      <section class="cta">
+        <h2>The challenge is live.</h2>
+        <p>Join the Telegram channel and follow the 90-day trading journey from day one.</p>
+        <a class="btn primary" href="https://t.me/+ntE9elayfcFjMDM1" target="_blank" rel="noopener">Join the Telegram Channel ↗</a>
+      </section>
     </main>
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <h2>TRADER <span>ANSH</span></h2>
-
-        <p>
-            DREAM BIG. STAY DISCIPLINED.
-            KEEP LEARNING.
-        </p>
-
-        <div class="disclaimer">
-            Trading involves financial risk.
-            Losses are possible. Nothing on this
-            page guarantees profits or financial returns.
-        </div>
-
-        <p>
-            © 2026 TRADER ANSH. ALL RIGHTS RESERVED.
-        </p>
-
+    <footer>
+      <span>© 2026 Trading Journey • 90 Days Challenge</span>
+      <span>Trading involves risk. No profits or outcomes are guaranteed. This is not financial advice.</span>
     </footer>
-
-</div>
-
+  </div>
 </body>
 </html>
