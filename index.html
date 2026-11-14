@@ -1,106 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#080b12" />
-  <meta name="description" content="Follow the 90 Days Trading to Business Challenge live on Telegram." />
-  <title>90 Days Trading to Business Challenge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050608">
+  <meta name="description" content="Follow my 90 Days Trading to Business Challenge.">
+  <title>Trading Journey | 90 Days Challenge</title>
   <style>
-    :root{--bg:#080b12;--panel:#111722;--line:#263142;--text:#f5f7fb;--muted:#9aa7ba;--gold:#f8c84e;--blue:#35b9f5}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}
-    body{margin:0;background:radial-gradient(ellipse at 50% -20%,#202a3c 0%,var(--bg) 52%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
-    header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}
-    .brand img{width:42px;height:42px;object-fit:contain;border-radius:12px}
-    .live{font-size:12px;color:#b7c3d5;border:1px solid #344153;border-radius:99px;padding:8px 12px;display:flex;align-items:center;gap:8px}
-    .dot{width:7px;height:7px;background:#36df9a;border-radius:50%;box-shadow:0 0 12px #36df9a}
-    .hero{text-align:center;padding:70px 0 56px}
-    .eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #3b3421;background:#1b180f;color:var(--gold);padding:9px 14px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-    h1{font-size:clamp(42px,7vw,82px);line-height:.98;letter-spacing:-.055em;margin:24px auto 20px;max-width:900px}
-    h1 span{color:var(--gold);display:block}
-    .lead{color:var(--muted);font-size:clamp(16px,2vw,19px);line-height:1.7;max-width:650px;margin:0 auto}
-    .actions{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin:32px 0 25px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 21px;border-radius:13px;font-weight:800;transition:.2s;min-height:52px}
-    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-    .primary{background:var(--gold);color:#15120a;box-shadow:0 8px 30px #f8c84e20}
-    .secondary{border:1px solid #354153;background:#121925}
-    .fine{font-size:12px;color:#738197}
-    .visual{max-width:850px;margin:40px auto 0;border:1px solid #2a3445;border-radius:22px;padding:8px;background:linear-gradient(135deg,#1b2535,#0c111a);box-shadow:0 30px 90px #0008}
-    .visual-inner{border-radius:16px;background:linear-gradient(145deg,#111925,#0b1018);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:20px;text-align:left}
-    .card{border:1px solid #293447;border-radius:16px;padding:22px;background:#111722}
-    .card small{color:var(--muted);font-size:12px;letter-spacing:.1em;text-transform:uppercase}
-    .card h3{margin:12px 0 8px;font-size:23px}.card p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
-    .mini{display:flex;align-items:center;gap:8px;color:var(--gold);font-size:12px;font-weight:700;margin-bottom:12px}
-    .steps{padding:60px 0}.section-title{text-align:center;font-size:clamp(28px,4vw,42px);letter-spacing:-.04em;margin:0 0 12px}
-    .section-sub{text-align:center;color:var(--muted);max-width:600px;margin:0 auto 30px;line-height:1.6}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .step{padding:24px;border:1px solid var(--line);border-radius:17px;background:#0f141d}
-    .num{width:35px;height:35px;border-radius:10px;background:#25200f;color:var(--gold);display:grid;place-items:center;font-weight:900}
-    .step h3{margin:18px 0 9px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.65}
-    .cta{margin:35px 0 70px;padding:36px;border:1px solid #3b3421;border-radius:22px;background:linear-gradient(120deg,#1b180f,#111722 65%);text-align:center}
-    .cta h2{font-size:clamp(26px,4vw,40px);margin:0 0 12px}.cta p{color:var(--muted);margin:0 auto 24px;max-width:600px;line-height:1.6}
-    footer{border-top:1px solid #1e2735;padding:25px 0 35px;color:#77859a;font-size:12px;line-height:1.7;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    @media(max-width:720px){.hero{padding:48px 0 35px}.visual-inner{grid-template-columns:1fr;padding:14px}.grid{grid-template-columns:1fr}.cta{padding:27px 18px}.brand span{font-size:13px}}
+    :root{--bg:#050608;--panel:#10141d;--line:#263244;--text:#f5f6fa;--muted:#9aa5b8;--gold:#ffc72f;--blue:#25b8f4;--red:#ff3d52}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0,#151c2b 0%,#050608 48%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{text-decoration:none;color:inherit}
+    .page{width:min(480px,100%);margin:auto;padding:28px 22px 24px;min-height:100vh;display:flex;flex-direction:column;align-items:center}
+    .top{width:100%;display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.13em;color:#aab4c5}
+    .status{border:1px solid #293447;border-radius:99px;padding:8px 12px;display:flex;gap:8px;align-items:center}
+    .dot{width:7px;height:7px;background:#35e29b;border-radius:50%;box-shadow:0 0 12px #35e29b}
+    .profile{margin-top:42px;text-align:center;width:100%}
+    .avatar-wrap{width:142px;height:142px;margin:0 auto 22px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#ffe16b,#ffb900,#6b4b08);box-shadow:0 0 26px #ffc72f30}
+    .avatar{width:100%;height:100%;border-radius:50%;object-fit:cover;background:#171b24;border:4px solid #080a0e}
+    h1{font-size:30px;line-height:1.08;letter-spacing:.04em;margin:0;font-weight:900;text-transform:uppercase}
+    h1 span{color:var(--gold)}
+    .tagline{font-size:13px;color:#c6cbd5;margin:13px 0 27px}
+    .tagline b{color:var(--gold);padding:0 7px}
+    .links{width:100%;display:grid;gap:13px}
+    .link{display:flex;align-items:center;gap:13px;padding:12px 13px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(120deg,#111722,#090c12);min-height:78px;transition:transform .18s,filter .18s}
+    .link:hover{transform:translateY(-2px);filter:brightness(1.12)}
+    .icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;flex:0 0 48px;font-size:24px;font-weight:800}
+    .copy{flex:1;min-width:0}
+    .copy strong{display:block;font-size:15px;line-height:1.25}
+    .copy small{display:block;color:var(--muted);font-size:12px;margin-top:4px}
+    .arrow{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:18px;flex:0 0 34px}
+    .telegram{border-color:#17658a}.telegram .icon,.telegram .arrow{background:#25a9e8;color:#fff}.telegram .icon{font-size:25px}
+    .youtube{border-color:#78232d}.youtube .icon,.youtube .arrow{background:#ff3045;color:white}
+    .broker{border-color:#68501a}.broker .icon{background:#f2e7e9;color:#d83b58}.broker .arrow{background:var(--gold);color:#17120a}
+    .broker .icon{font-size:21px}
+    .note{margin-top:24px;text-align:center;color:#758197;font-size:11px;line-height:1.65}
+    .pill-row{display:flex;justify-content:center;gap:25px;margin:35px 0 24px;color:#b8a16a;font-size:10px;letter-spacing:.12em;text-align:center}
+    .pill-row span{display:block;margin-top:7px;color:#9aa5b8}
+    footer{margin-top:auto;padding-top:26px;text-align:center;color:#647084;font-size:10px;line-height:1.7}
+    footer .disclaimer{max-width:360px;margin:8px auto 0}
+    @media(max-height:760px){.page{padding-top:18px}.profile{margin-top:25px}.avatar-wrap{width:115px;height:115px;margin-bottom:17px}h1{font-size:26px}.tagline{margin:10px 0 20px}.link{min-height:68px}.icon{width:43px;height:43px;flex-basis:43px}.pill-row{margin:24px 0 15px}}
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="#"><img src="1770786776263~3.jpg" alt="Your logo" /><span>TRADING JOURNEY</span></a>
-      <div class="live"><span class="dot"></span> LIVE ON TELEGRAM</div>
-    </header>
+  <main class="page">
+    <div class="top">
+      <span>TRADING JOURNEY</span>
+      <span class="status"><i class="dot"></i> LIVE ON TELEGRAM</span>
+    </div>
 
-    <main>
-      <section class="hero">
-        <div class="eyebrow">● &nbsp; 90 DAYS • REAL JOURNEY</div>
-        <h1>90 Days Trading<br><span>to Business Challenge</span></h1>
-        <p class="lead">The journey, the discipline, the decisions—and the real trading updates. Follow the challenge live on Telegram.</p>
-        <div class="actions">
-          <a class="btn primary" href="https://t.me/+ntE9elayfcFjMDM1" target="_blank" rel="noopener">Join Live on Telegram ↗</a>
-          <a class="btn secondary" href="https://broker-qx.pro/sign-up/?lid=2426032" target="_blank" rel="noopener">Open Broker Account ↗</a>
-        </div>
-        <div class="fine">Follow along • Learn from the process • Stay disciplined</div>
+    <section class="profile">
+      <!-- Keep your photo in the same folder as index.html, or change this filename -->
+      <div class="avatar-wrap"><img class="avatar" src="1770786776263~3.jpg" alt="Profile photo"></div>
+      <h1>90 DAYS <span>TRADING</span><br>CHALLENGE</h1>
+      <p class="tagline">Discipline today <b>•</b> Progress tomorrow</p>
+    </section>
 
-        <div class="visual">
-          <div class="visual-inner">
-            <div class="card">
-              <div class="mini"><span class="dot"></span> CHALLENGE IN PROGRESS</div>
-              <small>THE MISSION</small>
-              <h3>Build with discipline.</h3>
-              <p>90 days of documenting the trading journey—setups, risk management, wins, losses, and lessons.</p>
-            </div>
-            <div class="card">
-              <small>FOLLOW THE JOURNEY</small>
-              <h3>Every update. One channel.</h3>
-              <p>Get challenge updates and live posts directly in the Telegram community.</p>
-              <div style="margin-top:18px;color:#35b9f5;font-weight:800;font-size:13px">TELEGRAM COMMUNITY →</div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <nav class="links" aria-label="My links">
+      <a class="link telegram" href="https://t.me/+ntE9elayfcFjMDM1" target="_blank" rel="noopener">
+        <span class="icon">➤</span><span class="copy"><strong>Telegram Community</strong><small>Join the challenge & get live updates</small></span><span class="arrow">→</span>
+      </a>
+      <a class="link youtube" href="https://youtube.com/@YOUR_CHANNEL" target="_blank" rel="noopener">
+        <span class="icon">▶</span><span class="copy"><strong>YouTube</strong><small>Watch & learn with me</small></span><span class="arrow">→</span>
+      </a>
+      <a class="link broker" href="https://broker-qx.pro/sign-up/?lid=2426032" target="_blank" rel="noopener">
+        <span class="icon">◈</span><span class="copy"><strong>Quotex Broker</strong><small>Broker website / account access</small></span><span class="arrow">→</span>
+      </a>
+    </nav>
 
-      <section class="steps">
-        <h2 class="section-title">Be part of the journey</h2>
-        <p class="section-sub">Keep it simple. Follow the updates and focus on the process—not promises.</p>
-        <div class="grid">
-          <article class="step"><div class="num">01</div><h3>Join Telegram</h3><p>Get challenge updates, session posts, and progress directly in the channel.</p></article>
-          <article class="step"><div class="num">02</div><h3>Watch & learn</h3><p>Observe the decisions, patience, and risk management behind each session.</p></article>
-          <article class="step"><div class="num">03</div><h3>Trade responsibly</h3><p>Do your own research, practice first, and never risk money you cannot afford to lose.</p></article>
-        </div>
-      </section>
-
-      <section class="cta">
-        <h2>The challenge is live.</h2>
-        <p>Join the Telegram channel and follow the 90-day trading journey from day one.</p>
-        <a class="btn primary" href="https://t.me/+ntE9elayfcFjMDM1" target="_blank" rel="noopener">Join the Telegram Channel ↗</a>
-      </section>
-    </main>
+    <div class="pill-row"><div>LEARN<span>TRADING</span></div><div>BUILD<span>DISCIPLINE</span></div><div>FOCUS<span>YOUR GOALS</span></div></div>
+    <p class="note">Follow the journey • Learn from the process • Stay disciplined</p>
     <footer>
-      <span>© 2026 Trading Journey • 90 Days Challenge</span>
-      <span>Trading involves risk. No profits or outcomes are guaranteed. This is not financial advice.</span>
+      © 2026 Trading Journey • 90 Days Challenge
+      <div class="disclaimer">Trading involves risk. No profits or outcomes are guaranteed. This is not financial advice.</div>
     </footer>
-  </div>
+  </main>
 </body>
 </html>
